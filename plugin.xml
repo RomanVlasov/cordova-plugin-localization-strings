@@ -12,7 +12,7 @@
     <resource-file src="translations/ios/ru.lproj" target="ru.lproj" />
   </platform>
   <platform name="android">
-  	<resource-file src="translations/android/values" target="values" />
-    <resource-file src="translations/android/values-ru" target="values-ru" />
+  	<resource-file src="translations/android/values" target="res/values" />
+    <resource-file src="translations/android/values-ru" target="res/values-ru" />
   </platform>
 </plugin>
