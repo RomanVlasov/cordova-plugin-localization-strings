@@ -11,8 +11,8 @@
   </engines>
 
   <platform name="ios">
-  	<resource-file src="res/translations/ios/en.lproj" target="en.lproj" />
-    <resource-file src="res/translations/ios/ru.lproj" target="ru.lproj" />
+  	<resource-file src="../../res/translations/ios/en.lproj" target="en.lproj" />
+    <resource-file src="../../res/translations/ios/ru.lproj" target="ru.lproj" />
   </platform>
   <!--<hook src="scripts/create_strings.js" type="after_prepare" />-->
 
