@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-localization-strings-8" version="2.0.0">
-  <name>Localization</name>
-  <description>Experimental cordova Plugin for localizing local strings</description>
-  <license>MIT License</license>
-  <keywords>cordova,internationalization,localization,i18n,l10n</keywords>
-
+        id="cordova-plugin-railways-of-love-localization" version="2.0.0">
+  <name>Railways of Love localization</name>
+  <description>Hackish plugin to provide Railways of Love name localization</description>   
   <engines>
     <engine name="cordova" version=">=6.0.0"/>
   </engines>
 
   <platform name="ios">
-  	<resource-file src="res/translations/ios/en.lproj" target="en.lproj" />
-    <resource-file src="res/translations/ios/ru.lproj" target="ru.lproj" />
+  	<resource-file src="translations/ios/en.lproj" target="en.lproj" />
+    <resource-file src="translations/ios/ru.lproj" target="ru.lproj" />
   </platform>
-  <!--<hook src="scripts/create_strings.js" type="after_prepare" />-->
-
+  <platform name="android">
+  	<resource-file src="translations/android/values" target="values" />
+    <resource-file src="translations/android/values-ru" target="values-ru" />
+  </platform>
 </plugin>
