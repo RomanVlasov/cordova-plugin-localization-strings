@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-localization-strings" version="2.0.0">
+        id="cordova-plugin-localization-strings-8" version="2.0.0">
   <name>Localization</name>
-  <description>Cordova Plugin for localizing local strings</description>
+  <description>Experimental cordova Plugin for localizing local strings</description>
   <license>MIT License</license>
   <keywords>cordova,internationalization,localization,i18n,l10n</keywords>
 
@@ -10,6 +10,10 @@
     <engine name="cordova" version=">=6.0.0"/>
   </engines>
 
-  <hook src="scripts/create_strings.js" type="after_prepare" />
+  <platform name="ios">
+  	<resource-file src="res/translations/ios/en.lproj" target="en.lproj" />
+    <resource-file src="res/translations/ios/ru.lproj" target="ru.lproj" />
+  </platform>
+  <!--<hook src="scripts/create_strings.js" type="after_prepare" />-->
 
 </plugin>
